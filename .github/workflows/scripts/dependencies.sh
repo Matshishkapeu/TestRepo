@@ -6,4 +6,8 @@ echo "test script en cours"
 
 sudo apt-get update
 
-sudo apt-get install g++
+sudo apt-get install \
+	gcc g++ \
+	build-essential \
+	make \
+	libopenmpi-dev openmpi-bin \
