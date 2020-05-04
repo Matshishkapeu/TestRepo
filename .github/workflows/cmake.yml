@@ -26,7 +26,8 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo test OK
-        sudo apt-get update
 
-    - name: Lancement script
-      run: .github/workflows/scripts/dependencies.sh
+    - name: Install dependencies
+      run: |
+        pwd
+        .github/workflows/scripts/dependencies.sh
